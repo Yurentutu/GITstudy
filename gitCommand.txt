@@ -1,0 +1,280 @@
+########################################################################################################
+
+GitHub是一个代码托管工具
+
+########################################################################################################
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹
+初始化git用户名$ git config --global user.name 'Yurentutu'
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹
+初始化git邮箱，此处命令错误$ git config --global user.name '1930729383@qq.com'
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹
+新建文件夹$ mkdir test2
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹
+打开文件夹$ cd test
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test
+当前文件夹$ pwd
+/c/Users/Administrator/Desktop/新建文件夹/test
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test
+初始化仓库$ git init
+Initialized empty Git repository in C:/Users/Administrator/Desktop/新建文件夹/test/.git/
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+新建文件$ touch a1.php
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+当前仓库状态$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a1.php
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+添加到缓存区$ git add a1.php
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+当前仓库状态$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a1.php
+
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+提交到仓库$ git commit -m '添加a1.php‘
+>
+> ^C
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+提交到仓库$ git commit -m 'add a1.php'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Administrator@WIN-ID3A66OFA0V.(none)')
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+设置用户邮箱$ git config --global user.email "1930729383@qq.com"
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+设置用户名$ git config --global user.name "Yurentutu"
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+提交到仓库$ git commit -m 'add a1.php'
+[master (root-commit) 2b8fd3c] add a1.php
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a1.php
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+当前仓库状态$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "GIT\345\221\275\344\273\244.txt"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+修改文件名，当前仓库状态$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitCommand.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+命令输入错误$ is
+bash: is: command not found
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+命令输入错误$ Is
+bash: Is: command not found
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+LS命令查看当前目录$ ls
+a1.php  gitCommand.txt
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+用Vim编辑模式打开文件$ vim a1.php
+################################################################################
+
+Vim/Vi工作模式：
+
+vi filename进入Vim模式
+底线命令模式（：命令）
+i a o进入输入模式
+输入模式（输入源码）
+ESC进入底线命令模式
+底线命令模式(:命令)
+:wq退出Vim工作模式
+################################################################################
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+查看文件内容$ cat a1.php
+111111c;wq
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+查看当前库状态$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a1.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitCommand.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+添加修改后的文件到缓存区$ git add a1.php
+warning: LF will be replaced by CRLF in a1.php.
+The file will have its original line endings in your working directory
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+查看当前库状态$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   a1.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitCommand.txt
+
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+提交缓存区到库$ git commit -m '修改a1.php'
+[master a41339e] 修改a1.php
+ 1 file changed, 1 insertion(+)
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+删除本地库文件$ rm -f a1.php
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+删除缓存库文件$ git rm a1.php
+rm 'a1.php'
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+提交删除$ git commit -m ' 删除a1.php'
+[master 7f1ea26] 删删除a1.php
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 a1.php
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+当前库状态$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitCommand.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/test (master)
+…………$
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹
+当前用户参数$ git config --list
+pack.packsizelimit=2g
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=D:/programs/GIT/Git/mingw32/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+credential.helper=manager
+user.name=Yurentutu
+user.email=1930729383@qq.com
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹
+克隆项目到本地$ git clone https://github.com/Yurentutu/hello-world.git
+Cloning into 'hello-world'...
+remote: Enumerating objects: 7, done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 7
+Unpacking objects: 100% (7/7), 1.98 KiB | 14.00 KiB/s, done.
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹
+打开项目$ cd hello-world
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/hello-world (master)
+新建文件$ vi a1.php
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/hello-world (master)
+添加文件到缓存区$ git add a1.php
+warning: LF will be replaced by CRLF in a1.php.
+The file will have its original line endings in your working directory
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/hello-world (master)
+提交文件到本地仓库$ git commit -m '提交仓库‘
+>
+>
+> git commit -m 'tijiao'
+> ^C
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/hello-world (master)
+仓库状态$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   a1.php
+
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/hello-world (master)
+提交文件到本地仓库$ git commit -m 'commit'
+[master 1350c59] commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a1.php
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/hello-world (master)
+仓库状态$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/hello-world (master)
+上传仓库$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 269 bytes | 269.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Yurentutu/hello-world.git
+   eec4d0a..1350c59  master -> master
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/hello-world (master)
+$ ^C
+
+Administrator@WIN-ID3A66OFA0V MINGW32 ~/Desktop/新建文件夹/hello-world (master)
+$
+
+
+
